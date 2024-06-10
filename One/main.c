@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-#include "intersection.c"
-#include "union.c"
+#include "all.c"
 
 int main()
 {
@@ -35,13 +34,8 @@ int main()
         scanf("%d", &arr2[i]);
     }
 
-    int total = n + o;
-
-    int *unio = (int *)(malloc(total * sizeof(int)));
 
     all(arr1, arr2, n, o);
-
-    intersection(arr1, arr2, n, o);
 
     return 0;
 }
